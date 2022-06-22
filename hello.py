@@ -1,14 +1,21 @@
 # Ask user for their name
-name = input("What's your name? ")
+name = input("What's your name? ").strip().title()
+
+# Remove whitespace from str and Capitalize user's name with chained functions. They can be separate if necessary. Can put it all up top too. 
+# name = name.strip().title()
 
 # Say hello to user 
 """
 This seems to be a cool little comment type as well
 """
+# I like this way the best because it seems the most concise
+print(f"hello, {name}")
 
-print("hello, ", end="")
-print(name)
+# print("hello, ", end="")
+# print(name)
+
 # print("hello,", name)
+
 # print(name) I'm taking this out to try and get the output onto the same line to clean things up. I do that above by putting "+ name" after the "hello". I can also rewrite this function as: print("hello, ", name)
 
 # It should be written as: print("hello,", name) specifically WITHOUT the space after hello since the placement of 2 or more arguments together automatically spaces the outputs.
